@@ -2,7 +2,9 @@ import { Component } from "react";
 import { withRouter } from "react-router-dom";
 
 class Details extends Component {
-  state = { loading: true, pokemon: {} };
+  constructor() {
+    this.state = { loading: true, pokemon: {} };
+  }
 
   async componentDidMount() {
     fetch(`https://pokeapi.co/api/v2/pokemon/${this.props.match.params.id}`)

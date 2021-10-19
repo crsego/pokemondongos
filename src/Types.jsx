@@ -1,9 +1,10 @@
 import { Component } from "react";
 import { withRouter } from "react-router";
-import PokemonList from "./Pokemons";
 
 class Type extends Component {
-  state = { loading: true, type: {} };
+  constructor() {
+    this.state = { loading: true, type: {} };
+  }
 
   async componentDidMount() {
     fetch(`https://pokeapi.co/api/v2/type/${this.props.match.params.id}`)
