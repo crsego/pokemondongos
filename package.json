@@ -2,15 +2,17 @@
   "name": "pokemondongo",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://crsego.github.io/pokemondongos",
+  "homepage": "https://crsego.github.io/pokemondongos/",
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "start": "react-scripts start",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "eject": "react-scripts eject"
   },
   "author": "",
   "license": "ISC",
