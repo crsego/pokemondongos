@@ -2,7 +2,7 @@
   "name": "pokemondongo",
   "version": "1.0.0",
   "description": "",
-  "homepage": "http://crsego.github.io/pokemondongos",
+  "homepage": "https://crsego.github.io/pokemondongos",
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
